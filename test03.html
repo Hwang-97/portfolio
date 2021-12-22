@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            margin:0px;
+        }
+        #manu{
+            position: fixed;
+            top:0%;
+            right: 0%;
+            width: 200px;
+            height: 1000px;
+            background-color: #edf6f9;
+            box-shadow: 0px 0px 1px #000;
+        }
+
+        a:link , a:visited{
+            color: #aed9e0;
+        }
+        @keyframes ALink{
+            0%{
+                color: #aed9e0;
+            }
+            25%{
+                color: #81a2a7;
+            }
+            50%{
+                color: #5e687e;
+            }
+            75%{
+                color: #81a2a7;
+            }
+            100%{
+                color: #aed9e0;
+            }
+        }
+        a:hover{
+            animation-name: ALink;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        /* <><><><><><><><><><><><><><><><> */
+        #content1{
+            width: 100%;
+            height: 750px;
+            background-color: #edf6f9;
+        }
+        .text_box{
+            background-image: url(macConsole.png);
+            font-size: 20px;
+            margin-top: 100px;
+            margin-left: 500px;
+            padding-top: 60px;
+            width: 500px;
+            height: 450px;
+        }
+
+        .blink {
+            animation: blink 0.6s infinite;
+            font-size: 20px;
+        }
+
+        @keyframes blink {
+            to {
+                opacity: 0;
+                }
+            }
+        #banner{
+            height: 100px;
+        }
+        #content2{
+            width: 100%;
+            height: 750px;
+            background-color: #83c5be;
+        } 
+    </style>
+</head>
+<body>
+    <header id = "manu">
+        <a href="#"><div style="width: 100px; height:30px;  text-align: center; margin: 30px; font-size: 30px;">Main</div></a>
+    </header>
+    <main>
+        <section id = "contents">
+            <div id ="content1">
+                <div id = "banner">
+                    <div style="padding-top: 30px; padding-left: 50px; font-weight: bolder;">
+                        Developer. Hyun Woo
+                    </div>
+                </div>
+                <div class="text_box">
+                    <span class="text"></span>
+                    <span class="blink">|</span>
+                </div>
+                <script>
+                    const content = "안녕하세요.\n유연한 사고방식을 지닌 개발자\n황현우 입니다.";
+                    const text = document.querySelector(".text");
+                    let i = 0;
+            
+                    function typing(){
+                        if (i < content.length) {
+                            let txt = content.charAt(i);
+                            text.innerHTML += txt=== "\n" ? "<br/>": txt;
+                            i++;
+                        }
+                    }
+                    setInterval(typing, 200);
+                </script>
+            </div>
+            <div id ="content2">
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
