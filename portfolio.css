@@ -1,0 +1,238 @@
+body{
+    background-color: #ced4da;
+    font-family: GowunDodum;
+    width: 1550px;
+    height: 300px;
+    margin: 0px;
+}
+/* <><><><><><><><><><><><><><><><> */
+#content1{
+    width: 100%;
+}
+.text_box{
+    margin-top: 10%;
+    margin-left: 35%;
+    width: 50%;
+    height: 10%;
+    animation-name: text-boxAni;
+    animation-duration: 2s;
+}
+.text{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.Chacgetext{
+    font-size: 35px;
+    font-weight: bolder;
+    color:brown;
+}
+.blink { 
+    animation: blink 0.6s infinite;
+    font-size: 35px;
+}
+
+@keyframes blink {
+    to {
+        opacity: 0;
+        }
+    }
+#banner{
+    width: 100%;
+    height: 100px;
+}
+#mainComment{
+    padding-top: 1%;
+    padding-left: 50px;
+    font-weight: 600;
+    font-size: 17px;
+    display: inline-block;
+}
+#manu{
+    margin-left: 10%;
+}
+.button {
+    text-align: center;
+    width: 80px;
+    margin-left: 15%;
+    margin-top: 10%;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 550;
+    color: #000;
+    background-color: #ced4da;
+    border-radius:10%;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    display: inline-block;
+}
+.button_click {
+    text-align: center;
+    width: 80px;
+    margin-left: 15%;
+    margin-top: 10%;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 550;
+    color: #fff;
+    background-color: #495057;
+    border-radius:10%;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0px 15px 20px rgba(49, 50, 57, 0.4);
+    transform: translateY(-7px);
+}
+
+.button:hover {
+    background-color: #495057;
+    box-shadow: 0px 15px 20px rgba(49, 50, 57, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+@keyframes pageOn{
+    0%{
+    }
+    100%{
+        background-color: rgba(255, 255, 255, 0);
+        position: absolute; top: 0%; left:0%; z-index: 1;
+    }
+}
+@keyframes pageOff{
+    0%{
+    }
+    100%{
+        position: absolute; 
+        top: -100%; 
+        left: 0%;
+        z-index: 1;
+        opacity: 0;
+    }
+}
+.contentStart{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute; 
+    top: -100%; 
+    left: 0%;
+    z-index: 1;
+}
+.contentOn{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute; 
+    top: -100%; 
+    left: 0%;
+    z-index: 1;
+    animation-name: pageOn;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.contentOff{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute; 
+    top: 0%; 
+    left: 0%;
+    z-index: 1;
+    animation-name: pageOff;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.cencle{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20%;
+    width: 50px;
+    height: 50px;
+    margin-top:10px ;
+    padding-bottom: 13px;
+    text-align: center;
+    opacity: 1;
+    color: rgb(83, 20, 20);
+}
+@keyframes cencleRotate{
+    from{
+        transform: rotate( 0deg ) scale(1,1);
+        color: rgb(83, 20, 20);
+    }to{
+        transform: rotate( 360deg ) scale(1.2,1.2);
+        color: rgb(165, 17, 17);
+    }
+}
+.cencle:hover{
+    animation-name: cencleRotate;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.content{
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 80%;
+    background-color: rgba(255, 255, 255,0.95);
+    border-radius: 2%;
+    /* overflow:scroll; */
+}
+#profileMain{
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    width: 15%;
+    font-weight: 600;
+    font-size: 25px;
+}
+#profile{
+    margin-top: 15px;
+    padding-left: 20px;
+}
+#profile>img{
+    width: 100px;
+    height: 133.3px;
+    border-radius: 35%;
+    margin-left: 15px;
+    box-shadow: -0px 0px 5px rgba(0, 0, 0, 0.3);
+    float: left;
+}
+#profile>img:hover {
+    transform: scale(1.05,1.05);
+}
+#profile li{
+    margin-left: 140px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+#profile p,font{
+    font-weight: 600;
+}
+#certificate{
+    padding-left: 7px;
+    padding-top: 20px;
+}
+#certificate>div{
+    border:1px solid rgb(139, 130, 130);
+    background-color: #e0e8f0;
+    border-radius: 20%;
+    padding-top: 20px;
+    margin-right:20px ;
+    width: 145px;
+    height: 115px;
+    text-align: center;
+    display: inline-block;
+}
+#certificate>div:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: -0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+#certificate>div>img{
+    width: 50px;
+    height: 50px;
+}
