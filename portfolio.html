@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Developer. Hyun Woo :)</title>
     <link rel="stylesheet" type="text/css" href="portfolio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -55,7 +55,7 @@
             <div class ="contentStart" id="content2ID">
                 <div class ="cencle"><i class="fa-solid fa-xmark fa-4x"></i></div>
                 <div class = "content" id="profile">
-                    <div id = "profileMain">About me</div>
+                    <div id = "profileMain">About Me</div>
                     <div id = "profile">
                         <img src="증명사진.jpg">
                         <div>&nbsp;</div>
@@ -66,12 +66,12 @@
                                 <li>틀에 박히지 않은 사고방식으로 팀원의 스타일에 맞춰 코딩할 수 있습니다.</li>
                                 <li>매년 작은 목표를 정하고 하나씩 이뤄가며 살아가고 있습니다.</li>
                             </ul>
-                        </p>
-                        <!-- <div><font size=5;>2022년 목표</font></div>
-                        <p>2월부터 학점은행제를 통한 C , 리눅스 , 알고리즘 , 이산수학 강의를 수강할 계획이며 <br> 6월달에는 학사 취득 이후 정보처리 기사를 취득할 것 입니다.</p> -->
                         <div><font size=5;>가치관</font></div>
-                        <p>모든 경험은 언젠가 도움이 되고 어느 것이든지 배울 게 있다. 생각하며, <br>
-                        습관은 만들어 갈 수 있다는 것에 가치관을 크게 두고 있습니다.</p>
+                        <p id="ValuesComent">
+                            "경험은 언젠가 도움이 되고 모든것에 배움이 있다."<br>
+                            "습관은 만들고 고칠 수 있다"<br>
+                            이 두 가지에 가치관을 크게 두고 있습니다.
+                        </p>
                         <div><font size=5;>자격증</font></div>
                         <div id = "certificate">
                             <div>
@@ -101,16 +101,73 @@
         <section id ="contents3">
             <div class ="contentStart" id="content3ID">
                 <div class ="cencle"><i class="fa-solid fa-xmark fa-4x"></i></div>
-                <div class = "content" id="content3">
-                    
+                <div class = "left"><i class="fa-regular fa-circle-left fa-4x"></i></div>
+                <div class = "right"><i class="fa-regular fa-circle-right fa-4x"></i></div>
+                <div class = "content" id="project1">
+                    1
+                </div>
+                <div class = "content" id="project2">
+                    2
+                </div>
+                <div class = "content" id="project3">
+                    3
                 </div>
             </div>
         </section>
         <section id ="contents4">
             <div class ="contentStart" id="content4ID">
                 <div class ="cencle"><i class="fa-solid fa-xmark fa-4x"></i></div>
-                <div class = "content" id="content4">
-
+                <div class = "content" id="skill">
+                    <div id = "skillMain">SKILL</div>
+                    <div>&nbsp;</div>
+                    <div class = "skillTitle">Front-End</div>
+                    <hr>
+                    <div id = "skillData1" class = "skillData">
+                        <img src="html.png">
+                        <div>HTML</div>
+                    </div>
+                    <div id = "skillData2" class = "skillData">
+                        <img src="css.png">
+                        <div>CSS</div>
+                    </div>
+                    <div id = "skillData3" class = "skillData">
+                        <img src="javascript.png">
+                        <div>JavaScript</div>
+                    </div>
+                    <div class = "skillTitle">Back-End</div>
+                    <hr>
+                    <div id = "skillData4" class = "skillData">
+                        <img src="java.png">
+                        <div>JAVA</div>
+                    </div>
+                    <div id = "skillData5" class = "skillData">
+                        <img src="oracle.png">
+                        <div>ORACLE</div>
+                    </div>
+                    <div id = "skillData6" class = "skillData">
+                        <img src="jsp.png">
+                        <div>JSP</div>
+                    </div>
+                    <div class = "skillTitle">Programing Tools</div>
+                    <hr>
+                    <div id = "skillData7" class = "skillData">
+                        <img src="eclipse.png">
+                        <div>Eclipse</div>
+                    </div>
+                    <div id = "skillData8" class = "skillData">
+                        <img src="vscode.png">
+                        <div>VSCode</div>
+                    </div>
+                    <div class = "skillTitle">Version Control Tools</div>
+                    <hr>
+                    <div id = "skillData9" class = "skillData">
+                        <img src="git.png">
+                        <div>Git</div>
+                    </div>
+                    <div id = "skillData10" class = "skillData">
+                        <img src="github.png">
+                        <div>GitHub</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -170,20 +227,40 @@
         }
         //=====================================================================================================================pageON ▲
         const cencleButton = document.getElementsByClassName('cencle');
-        console.log(cencleButton);
-        cencleButton[0].onclick = contentCencle;
-        cencleButton[1].onclick = contentCencle;
-        cencleButton[2].onclick = contentCencle;
+        cencleButton[0].onclick = contentCencle1;
+        cencleButton[1].onclick = contentCencle2;
+        cencleButton[2].onclick = contentCencle3;
 
-        function contentCencle(){
+        function contentCencle1(){
             profilebtn.className = 'button';
-            projectbtn.className = 'button';
-            skillbtn.className = 'button';
             content2.className = 'contentOff';
+        }
+        function contentCencle2(){
+            projectbtn.className = 'button';
             content3.className = 'contentOff';
+        }
+        function contentCencle3(){
+            skillbtn.className = 'button';
             content4.className = 'contentOff';
         }
         //====================================================================================================================pageOFF ▲
+        const project1 = document.getElementById('project1');
+        const project2 = document.getElementById('project2');
+        const project3 = document.getElementById('project3');
+
+        const left = document.getElementsByClassName('left');
+        const right = document.getElementsByClassName('right');
+
+        left.onclick = leftProject;
+        right.onclick = rightProject;
+        console.log(left);
+        function leftProject(){
+            alert("left");
+        }
+        function rightProject(){
+            alert("right");
+        }
+
     </script>
 </body>
 </html>

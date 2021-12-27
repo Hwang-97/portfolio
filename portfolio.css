@@ -1,5 +1,7 @@
 body{
-    background-color: #ced4da;
+    background: #8e9eab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8e9eab, #eef2f3); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8e9eab, #eef2f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: GowunDodum;
     width: 1550px;
     height: 300px;
@@ -50,6 +52,7 @@ body{
 #manu{
     margin-left: 10%;
 }
+/* ============================================================================================================== */
 .button {
     text-align: center;
     width: 80px;
@@ -59,7 +62,6 @@ body{
     text-transform: uppercase;
     font-weight: 550;
     color: #000;
-    background-color: #ced4da;
     border-radius:10%;
     transition: all 0.3s ease 0s;
     cursor: pointer;
@@ -74,20 +76,17 @@ body{
     text-transform: uppercase;
     font-weight: 550;
     color: #fff;
-    background-color: #495057;
     border-radius:10%;
     cursor: pointer;
     display: inline-block;
-    box-shadow: 0px 15px 20px rgba(49, 50, 57, 0.4);
     transform: translateY(-7px);
 }
 
 .button:hover {
-    background-color: #495057;
-    box-shadow: 0px 15px 20px rgba(49, 50, 57, 0.4);
     color: #fff;
     transform: translateY(-7px);
 }
+/* ============================================================================================================== */
 @keyframes pageOn{
     0%{
     }
@@ -174,11 +173,26 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 60%;
-    height: 80%;
+    height: 85%;
     background-color: rgba(255, 255, 255,0.95);
     border-radius: 2%;
-    /* overflow:scroll; */
+    padding-left: 20px;
+    overflow:scroll;
 }
+.content::-webkit-scrollbar {
+    width:4px;  /*스크롤바의 너비*/
+    height: 0px;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background-color:#aaacb4; /*스크롤바의 색상*/
+    border-radius: 60%;
+}
+
+.content::-webkit-scrollbar-track {
+    background-color:rgba(95, 90, 90, 0); /*스크롤바 트랙 색상*/
+}
+/* ============================================================================================================== */
 #profileMain{
     margin-top: 15px;
     margin-left: auto;
@@ -188,14 +202,10 @@ body{
     font-weight: 600;
     font-size: 25px;
 }
-#profile{
-    margin-top: 15px;
-    padding-left: 20px;
-}
 #profile>img{
-    width: 100px;
-    height: 133.3px;
-    border-radius: 35%;
+    width: 110px;
+    height: 149px;
+    border-radius: 20%;
     margin-left: 15px;
     box-shadow: -0px 0px 5px rgba(0, 0, 0, 0.3);
     float: left;
@@ -210,29 +220,139 @@ body{
     font-size: 15px;
     font-weight: 600;
 }
-#profile p,font{
+div+p{
     font-weight: 600;
+    padding: 0px;
+    text-align: center;
+    margin-right: 40px;
+}
+#profile font{
+    text-align: center;
+    margin-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-weight: 600;
+    display: block;
 }
 #certificate{
     padding-left: 7px;
     padding-top: 20px;
 }
 #certificate>div{
-    border:1px solid rgb(139, 130, 130);
-    background-color: #e0e8f0;
+    border:3px solid black;
+    background-color: white;
     border-radius: 20%;
     padding-top: 20px;
-    margin-right:20px ;
+    margin-right:10px;
+    margin-left: 3px;
     width: 145px;
     height: 115px;
     text-align: center;
     display: inline-block;
 }
 #certificate>div:hover{
-    transform: scale(1.1,1.1);
+    transform: scale(1.05,1.05);
     box-shadow: -0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 #certificate>div>img{
     width: 50px;
     height: 50px;
+}
+/* ============================================================================================================== */
+#skillMain{
+    margin-top: 15px;
+    margin-left: 46.6%;
+    margin-right: auto;
+    padding-top: 20px;
+    width: 15%;
+    font-weight: 600;
+    font-size: 25px;
+}
+.skillData{
+    width: 100px;
+    height: 100px;
+}
+.skillData{
+    display: inline-block;
+    margin-left: 5%;
+    text-align: center;
+}
+.skillData:hover{
+    transform: scale(1.1,1.1);
+}
+.skillData>img{
+    width: 50%;
+}
+.skillData>div{
+    font-weight: 600;
+    text-align: center;
+}
+.skillTitle{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+/* =================================================================================================================== */
+/* 
+    1. 화살표 클릭시 다음 프로젝트를 보여줘야됨.
+    2. z index 오른쪽 화살표 클릭시 이전 화면은 왼쪽으로 다음화면도 왼쪽으로 ( 100%씩 이동해야됨. ) > 전체 블럭을 잡을것
+    3. 기존 content 배경은 건드리지 않는다. position 을 이용
+*/
+.left{
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    color: #000;
+    position: absolute;
+    top:50%;
+    left: 10%;
+}
+.left:hover{
+    transform: translateY(-7px);
+    color: #fff;
+}
+.right{
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    color: #000;
+    position: absolute;
+    top:50%;
+    right: 10%;
+}
+.right:hover{
+    transform: translateY(-7px);
+    color: #fff;
+}
+#project1{
+    width: 60%;
+    height: 85%;
+    background-color: rgba(255, 255, 255,0.95);
+    position: absolute;
+    top:10%;
+    left: 19.3%;
+    z-index: 1;
+    border-radius: 2%;
+    overflow:scroll;
+}
+#project2{
+    width: 60%;
+    height: 85%;
+    background-color: rgba(255, 255, 255,0.95);
+    position: absolute;
+    top:10%;
+    left: 119.3%;
+    z-index: 1;
+    border-radius: 2%;
+    overflow:scroll;
+}
+#project3{
+    width: 60%;
+    height: 85%;
+    background-color: rgba(255, 255, 255,0.95);
+    position: absolute;
+    top:10%;
+    left: 219.3%;
+    z-index: 1;
+    border-radius: 2%;
+    overflow:scroll;
 }
