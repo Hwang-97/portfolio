@@ -220,7 +220,7 @@ body{
     font-size: 15px;
     font-weight: 600;
 }
-div+p{
+#ValuesComent{
     font-weight: 600;
     padding: 0px;
     text-align: center;
@@ -235,7 +235,7 @@ div+p{
     display: block;
 }
 #certificate{
-    padding-left: 7px;
+    padding-left: 30px;
     padding-top: 20px;
 }
 #certificate>div{
@@ -306,6 +306,7 @@ div+p{
     position: absolute;
     top:50%;
     left: 10%;
+    outline:none;
 }
 .left:hover{
     transform: translateY(-7px);
@@ -318,41 +319,53 @@ div+p{
     position: absolute;
     top:50%;
     right: 10%;
+    outline:none;
 }
 .right:hover{
     transform: translateY(-7px);
-    color: #fff;
+    color: #fff;    
 }
-#project1{
+#projects{
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
     width: 60%;
     height: 85%;
     background-color: rgba(255, 255, 255,0.95);
-    position: absolute;
-    top:10%;
-    left: 19.3%;
-    z-index: 1;
     border-radius: 2%;
-    overflow:scroll;
+    overflow: hidden;
 }
-#project2{
-    width: 60%;
-    height: 85%;
-    background-color: rgba(255, 255, 255,0.95);
-    position: absolute;
-    top:10%;
-    left: 119.3%;
-    z-index: 1;
-    border-radius: 2%;
-    overflow:scroll;
+.project{
+    height: 99.6%;
+    width: 99%;
+    display: inline-block;
+    scroll-behavior: smooth;
+    padding-top: 10px;
 }
-#project3{
-    width: 60%;
-    height: 85%;
-    background-color: rgba(255, 255, 255,0.95);
-    position: absolute;
-    top:10%;
-    left: 219.3%;
-    z-index: 1;
-    border-radius: 2%;
-    overflow:scroll;
+.project::after{
+    clear: both;
+}
+.project :nth-child(2){
+    width: 50%;
+    height: 81%;
+    float: left;
+    text-align: center;
+}
+.project :nth-child(2) img{
+    width: 71%;
+}   
+.project :nth-child(3){
+    width: 47%;
+    height: 45%;
+    float: left;
+}
+.project :nth-child(4){
+    width: 47%;
+    height: 35%;
+    float: left;
+}
+.project :nth-child(4) >img{
+    width: 30%;
+    height: 50%;
+    display: block;
 }
