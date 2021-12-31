@@ -3,8 +3,6 @@ body{
     background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: GowunDodum;
-    width: 1550px;
-    height: 300px;
     margin: 0px;
 }
 /* <><><><><><><><><><><><><><><><> */
@@ -12,13 +10,13 @@ body{
     width: 100%;
 }
 .text_box{
-    margin-top: 10%;
-    margin-left: 35%;
+    margin-top: 12%;
+    margin-left: 37%;
     width: 50%;
     height: 10%;
     animation-name: text-boxAni;
     animation-duration: 2s;
-}
+}   
 .text{
     font-size: 40px;
     font-weight: bolder;
@@ -32,22 +30,92 @@ body{
     animation: blink 0.6s infinite;
     font-size: 35px;
 }
-
+.linkList{
+    position:absolute;
+    left: 90%;
+    top: 0%;
+}
+#gitHubLink,#blogeLink{
+    margin-top: 100%;
+    padding-top: 100%;
+    color: #000000;
+}
+#gitHubLink:hover,#blogeLink:hover{
+    color: #fff;
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+.contactLink{
+    margin-top: 100%;
+    padding-top: 100%;
+    color: #000000;
+    cursor: pointer;
+}
+.contactLink:hover{
+    color: #fff;
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+.contactLink_click{
+    margin-top: 100%;
+    padding-top: 100%;
+    color: #fff;
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+.contactCardOn{
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 3%;
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    transition: all 0.5s;
+    left: 67%;
+    top: 2%;
+}
+#contactCard p:nth-child(n+3){
+    margin-left: 15%;
+    margin-top: 17%;
+    color: black;
+    font-size: 1em;
+    font-weight: bolder;
+    
+}
+#contactCard p:nth-child(1),#contactCard p:nth-child(2){
+    text-align: center;
+    margin-top: 16%;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bolder;
+    
+}
+.contactCardOff{
+    text-align: center;
+    border-radius: 3%;
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    transition: all 0.5s;
+    opacity: 0;
+    left: 67%;
+    top: -55%;
+}
 @keyframes blink {
     to {
         opacity: 0;
-        }
     }
+}
 #banner{
     width: 100%;
-    height: 100px;
+    height: 30%;
 }
-#mainComment{
+#mainComment {
     padding-top: 1%;
     padding-left: 50px;
     font-weight: 600;
     font-size: 17px;
-    display: inline-block;
 }
 #manu{
     margin-left: 10%;
@@ -56,7 +124,7 @@ body{
 .button {
     text-align: center;
     width: 80px;
-    margin-left: 15%;
+    margin-left: 16%;
     margin-top: 10%;
     font-size: 12px;
     text-transform: uppercase;
@@ -70,7 +138,7 @@ body{
 .button_click {
     text-align: center;
     width: 80px;
-    margin-left: 15%;
+    margin-left: 16%;
     margin-top: 10%;
     font-size: 12px;
     text-transform: uppercase;
@@ -110,7 +178,8 @@ body{
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0);
-    position: absolute; 
+    position: absolute;
+    opacity: 0;
     top: -100%; 
     left: 0%;
     z-index: 1;
@@ -294,11 +363,6 @@ body{
     margin-bottom: 1%;
 }
 /* =================================================================================================================== */
-/* 
-    1. 화살표 클릭시 다음 프로젝트를 보여줘야됨.
-    2. z index 오른쪽 화살표 클릭시 이전 화면은 왼쪽으로 다음화면도 왼쪽으로 ( 100%씩 이동해야됨. ) > 전체 블럭을 잡을것
-    3. 기존 content 배경은 건드리지 않는다. position 을 이용
-*/
 .left{
     transition: all 0.3s ease 0s;
     cursor: pointer;

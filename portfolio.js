@@ -1,4 +1,3 @@
-
 let i = 0,
     j = 0;
 
@@ -97,3 +96,24 @@ right.onclick = function(){
     }
 }
 // ========================================================================================================================
+const gitHubLink = document.getElementById('gitHubLink');
+const blogeLink = document.getElementById('blogeLink');
+const contactLink = document.getElementById('contactLinkId');
+
+const contactCard = document.getElementById('contactCard');
+
+gitHubLink.onclick = function(){
+    window.location.href="https://github.com/Hwang-97";
+};
+blogeLink.onclick = function(){
+    window.location.href="https://beginner-programmer.tistory.com/";
+};
+contactLink.onclick = function(){
+    if(contactCard.className == 'contactCardOff'){
+        contactLink.className='contactLink_click';
+        contactCard.className = 'contactCardOn';
+    }else if(contactCard.className == 'contactCardOn'){
+        contactCard.className = 'contactCardOff';
+        contactLink.className='contactLink';
+    }
+}
