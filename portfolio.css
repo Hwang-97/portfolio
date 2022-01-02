@@ -193,7 +193,7 @@ body{
     left: 0%;
     z-index: 1;
     animation-name: pageOn;
-    animation-duration: 0.7s;
+    animation-duration: 0.5s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 }
@@ -206,7 +206,7 @@ body{
     left: 0%;
     z-index: 1;
     animation-name: pageOff;
-    animation-duration: 0.7s;
+    animation-duration: 0.5s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 }
@@ -369,7 +369,7 @@ body{
     color: #000;
     position: absolute;
     top:50%;
-    left: 10%;
+    left: 5%;
     outline:none;
 }
 .left:hover{
@@ -382,54 +382,104 @@ body{
     color: #000;
     position: absolute;
     top:50%;
-    right: 10%;
+    right: 5%;
     outline:none;
 }
 .right:hover{
     transform: translateY(-7px);
     color: #fff;    
 }
+/* ==========================================================프로젝트 공통사항===================================================== */
 #projects{
-    margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
-    height: 85%;
+    width: 75%;
+    height: 87%;
     background-color: rgba(255, 255, 255,0.95);
     border-radius: 2%;
+    padding: 0px;
     overflow: hidden;
+
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.project{
-    height: 99.6%;
-    width: 99%;
-    display: inline-block;
-    scroll-behavior: smooth;
-    padding-top: 10px;
+#projects p {
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 1%;
 }
-.project::after{
-    clear: both;
+.project_Links{
+    cursor: pointer;
+    background-color: rgb(235, 218, 196);
+    color: rgb(179, 28, 28);
 }
-.project :nth-child(2){
-    width: 50%;
-    height: 81%;
+#projects .projectSeq{
+    text-align: center;
+    margin-right: 10px; 
+    font-size: 1.3em;
+    font-weight: bolder; 
+    margin-bottom: 1%;
+    padding-top: 2%; 
+    margin-top: 0px;
+}
+b{
+    font-size: 1.05em;
+}
+/* ==========================================================사진의 비율에 따라 행 열 레이아웃 구분===================================================== */
+.project_column{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.project_column .project_img{
+    width: 46%;
+    height: 85%;
     float: left;
     text-align: center;
 }
-.project :nth-child(2) img{
-    width: 71%;
-}   
-.project :nth-child(3){
-    width: 47%;
-    height: 45%;
+.project_column .project_img>img{
+    height: 100%;
+}
+.project_column .project_contents{
+    width: 49%;
+    height: 85%;
     float: left;
 }
-.project :nth-child(4){
-    width: 47%;
-    height: 35%;
-    float: left;
+.project_column .project_contents::after{
+    clear: left;
 }
-.project :nth-child(4) >img{
-    width: 30%;
-    height: 50%;
+.project_column .project_skill_img>img{
+    width: 10%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+/* ==========================================================사진과 글의 나눈 방삭에 따라 행 열 레이아웃 구분===================================================== */
+.project_row{
+    height: 100%;
+    width: 100%;
     display: block;
+}
+.project_row .project_img{
+    padding-top: 4%;
+    width: 60%;
+    height: 75%;
+    float: left;
+}
+.project_row .project_img>img{
+    height: 100%;
+    width: 100%;
+}
+.project_row .project_contents{
+    margin-top: 0px;
+    padding-left: 1%;
+    width: 39%;
+    height: 85%;
+    float: left;
+}
+.project_row .project_contents::after{
+    clear: left;
+}
+.project_row .project_contents img{
+    width: 8%;
 }

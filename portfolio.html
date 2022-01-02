@@ -116,82 +116,154 @@
                 <div class = "left"><a href="#project1" class = "left" id="leftBtn"><i class="fa-regular fa-circle-left fa-4x"></i></a></div>
                 <div class = "right"><a href="#project2" class = "right" id="rightBtn"><i class="fa-regular fa-circle-right fa-4x"></i></a></div>
                 <div class = "content" id="projects">
-                    <a id="project1" name = "project" class="project">
-                        <h4 style="text-align: center;margin-right: 10px;">Project.1</h4>
-                        <div>
+                    <a id = "project1" name = "project" class="project_column">
+                        <p class="projectSeq">Project.1</p>
+                        <div class="project_img">
                             <img src="./images/calculator.gif">
                         </div>
-                        <div>
-                            <p>
-                                해당 프로젝트는 2일간 진행된 프로젝트 이며 Swing
-                                을 이용한 순수 JAVA 프로젝트입니다. <br><br>
-                                프로젝트를 진행하면서 JAVA에 대해 더욱 흥미가 생기게 되었고,<br>
-                                GUI 의 구성 원리 등에 대해서 더욱 깊게 공부하였습니다.<br><br>
-                            </p>
-                        </div>
-                        <div>
-                            <img src="./images/java.png"> 
-                            <img src="./images/github.png">
-                        </div>
-                    </a>
-                    <a id = "project2" name = "project" class="project">
-                        <h4 style="text-align: center;margin-right: 10px;">Project.2</h4>
-                        <div>
-                            
-                        </div>
-                        <div>
-                            
-                        </div>
-                        <div>
-                            
+                        <div class="project_contents">
+                            <div>
+                                <p><b>개요 </b><br>해당 프로젝트는 2일간 진행된 순수 JAVA 프로젝트이며 Swing을 사용해서 구현하였고 , 계산기의 ON / OFF 가 가능하도록 설계하였습니다. <span id="project1_Link" class="project_Links">GitHub Link</span>
+                                </p>
+                                <p><b>개선 요구 사항</b><br>앞으로 해당 프로그램을 조금 더 최적화 시키도록 성능을 개선해 나갈 계획입니다.
+                                </p>
+                                <p><b>느낀 점 </b><br>해당 프로젝트를 하면서 기초 지식을 가지고 툴을 사용하는 것이 더욱 효과적이라고 느꼈고 이후 개발 역시 기초 지식을                가지고 편리한 툴을 사용할 것입니다.
+                                </p>
+                            </div>
+                            <div>
+                                <b>주 사용 기능 및 이유 </b><br>해당 프로젝트를 진행하며
+                                GUI 기능은 swing으로 구현하였고, Windowbuilder 툴을 사용하였습니다.<br>
+                                이유는 swing이 javaFX 보다 더 오래된 기능이기 때문에 GUI기초를 공부하기 좋을 것 같다고 판단하였고,<br>
+                                basic 하게 코드로만 구현도 가능하였지만 효율성이 떨어진다 판단하여 Windowbuilder를 사용하였습니다.
+                            </div>
+                            <div class="project_skill_img">
+                                <img src="./images/java.png" >
+                                <img src="./images/github.png">
+                            </div>
                         </div>
                     </a>
-                    <a id = "project3" name = "project" class="project">
-                        <h4 style="text-align: center;margin-right: 10px;">Project.3</h4>
-                        <div>
-                            
+                    <a id = "project2" name = "project" class="project_row">
+                        <p class="projectSeq">Project.2</p>
+                        <div class="project_img">
+                            <img src="./images/hotKeyword & Stock.gif">
                         </div>
-                        <div>
-                            
-                        </div>
-                        <div>
-                            
-                        </div>
-                    </a>
-                    <a id = "project4" name = "project" class="project">
-                        <h4 style="text-align: center;margin-right: 10px;">Project.4</h4>
-                        <div>
-                            
-                        </div>
-                        <div>
-                            
-                        </div>
-                        <div>
-                            
-                        </div>
-                    </a>
-                    <a id = "project5" name = "project" class="project">
-                        <h4 style="text-align: center;margin-right: 10px;">Project.5</h4>
-                        <div>
-                            
-                        </div>
-                        <div>
-                            
-                        </div>
-                        <div>
-                            
+                        <div class="project_contents">
+                            <div>
+                                <p><b>개요 </b><br>
+                                    해당 프로젝트는 수업 종료 후 약간의 시간을 투자하여 2인이 11일간 제작한 프로젝트입니다.
+                                    실시간 검색어를 crawling 한 뒤 해당 정보로 뉴스를 검색하고 2000개의 기업 중 검색어와 가장 많이 매칭된 주식을 찾아 정보를 제공하는 프로그램입니다.
+                                    <span id="project2_Link" class="project_Links">GitHub Link</span>
+                                </p>
+                                <p><b>개선 요구 사항</b><br>
+                                    프로그램의 구동시 소요되는 시간을 단축할 것이고, 예외 처리 부분을 더욱 세밀하게 업데이트할 예정입니다.
+
+                                </p>
+                                <p><b>느낀 점</b><br>
+                                    해당 프로젝트를 하면서 예외 처리가 정말 중요하다는 것을 느꼈고, 현재 코딩 스타일 이 굉장히 비효율 적이라고 느껴 코딩 스타일을 많이 변화해야겠다고 생각했습니다.
+
+                                </p>
+                            </div>
+                            <div>
+                                <b>주 사용 기능 및 이유</b> <img src="./images/java.png"> <img src="./images/github.png"> <img src="./images/sourcetree.png" ><br>
+                                해당 프로젝트를 진행함에 있어 핵심 기술 두 가지로는 Jsoup 라이브러리 와 Linked map을 사용했습니다. Jsoup을 사용한 이유는 뉴스와 실검 주식정보를 가져오기 위함 이였고, Linked map 은 주식정보와 실검을 더욱 확실하게 매칭하기 위해서 map을 사용하기로 했지만 Hash map을 순서가 존재하지 않아 실검 순위가 제대로 보이지 않았고, 해당 문제를 해결하기 위해 순서가 존재하는 map인 Linked map을 사용하게 되었습니다.
+                            </div>
                         </div>
                     </a>
-                    <a id = "project6" name = "project" class="project">
-                        <h4 style="text-align: center;margin-right: 10px;">Project.6</h4>
-                        <div>
+                    <a id = "project3" name = "project" class="project_row">
+                        <p class="projectSeq">Project.3</p>
+                        <div class="project_img">
+                            <img src="./images/ElectronicsShopping.gif" alt="">
+                        </div>
+                        <div class="project_contents">
+                            <div>
+                                <p><b>개요</b><br>
+                                    해당 프로젝트는 5인 이서 약 4일간 진행된 순수 JAVA 프로젝트입니다. Txt 파일에 정보를 저장하고 불러오는 방식으로 진행했으며 회원&비회원은 상품에 대한 조회 및 구매를 할 수 있고 평가를 할 수 있는 등 쇼핑몰 사용자에 대한 전반적인 기능을 구현하였고, 
+                                    관리자는 상품 데이터를 조작할 수 있으며 회원&비회원에 대한 정보와 그 외 전반적인 쇼핑몰 데이터에 대한 통계를 확인 가능하게 구현하였습니다.
+                                    <span id="project3_Link" class="project_Links">GitHub Link</span>
+                                </p>
+                                <p><b>개선 요구 사항</b><br>
+                                    예외 처리 부분을 조금 더 신경 써야 하고, 출력의 레이아웃을 조금 더 부드럽게 수정하면 좋을 것 같습니다.
+                                </p>
+                                <p><b>느낀 점</b><br>
+                                    해당 프로젝트를 진행하면서 팀 프로젝트의 장단점에 대해서 많이 배웠고, 앞으로 팀 프로젝트를 진행함에 있어 어떻게 행동해야 될지 방향을 잡게 되었습니다.
+                                </p>
+                            </div>
+                            <div>
+                                <b>주 사용 기능 및 이유</b><img src="./images/java.png"><br>
+                                저는 해당 프로그램에서 관리자 통계와 회원의 주문 내역 확인 장바구니 구매 등의 기능을 구현하였습니다. 기능을 구현함에 있어 특정한 코딩 스타일을 고집하지 않고, 배운 모든 기술을 사용하는 것에 중점을 두었습니다. 이런 식으로 코딩한 이유는 한곳에 얽매여있는 코딩을 하고 싶지 않았고, 똑같은 기능도 다양하게 구현해 보고 싶었습니다.
+                            </div>
+                        </div>
+                    </a>
+                    <a id = "project4" name = "project" class="project_row">
+                        <p class="projectSeq">Project.4</p>
+                        <div class="project_img">
+                            <img src="./images/Oracle Project.png">
+                        </div>
+                        <div class="project_contents">
+                            <div>
+                                <p><b>개요 </b><br>
+                                    해당 프로젝트는 6명의 팀원이 약 6일간 진행한 오라클 프로젝트입니다. 학원의 교육생 선생님 강의 등을 조작 및 조회 가능하게 제작하였고, 수료한 교육생도 사용할 수 있는 로직을 구현하였습니다.
+                                    <span id="project4_Link" class="project_Links">GitHub Link</span>
+                                </p>
+                                <p><b>개선 요구 사항</b><br>
+                                    테이블을 구성할 때 참조키의 제약사항을 거의 다 not null로 잡고 진행하였는데 해당 부분의 제약사항을 null 값 허용으로 수정하면 더욱 유연한 프로그램이 될 것 같습니다.
+                                </p>
+                                <p><b>느낀 점</b><br>
+                                    ERD 구성이 정말 중요하다는 것을 직접 느끼게 되었습니다. 또한 참조 관계를 강하게 묶어놓으면 데이터의 데이터 무결성에는 좋겠지만 관리함에 있어 조금 어려워질 수도 있다고 느꼈습니다.
+                                </p>
+                            </div>
+                            <div>
+                                <b>주 사용 기능 및 이유</b>&nbsp;&nbsp;&nbsp;<img src="./images/oracle.png"><br>
+                                해당 프로그램을 구현함에 있어 먼저 ANSI-SQL로 쿼리를 작성 후 PL-SQL로 사용하기 쉽게 변형하였습니다. 또한 쿼리문이 너무 길고 자주 사용하는 경우 viwe로 저장해 사용하였습니다. 
+                                PL-SQL을 사용한 이유는 어떠한 데이터 연산에 따라 CRUD를 유연하게 구연할 수 있었기 때문입니다. 또한
+                                Vwie를 사용함으로써 쿼리문을 짧게 구현하고, 가독성을 높일 수 있었습니다.
+                            </div>
+                        </div>
+                    </a>
+                    <a id = "project5" name = "project" class="project_row">
+                        <p class="projectSeq">Project.5</p>
+                        <div class="project_img">
+                            <img src="./images/Temperature display tumbler.gif">
+                        </div>
+                        <div class="project_contents">
+                            <div>
+                                <p><b>개요 </b><br>
+                                    해당 프로젝트는 대학교 재학 중 졸업작품으로 진행한 프로젝트입니다. 3명이 한 팀으로 진행했고, 아두이노를 이용한 온도 표시 텀블러를 제작하였습니다. 제작에 사용된 재료로는 온도에 따라 전압이 변화하는 가변저항, 터치센서, oled, 3d 펜으로 제작했습니다. 제작된 텀블러는 온도를 민감하게 파악해야 되는 경우 사용할 수 있습니다. 예 ) 분유, 차 등 
+                                </p>
+                                <p><b>개선 요구 사항</b><br>
+                                    터치 센서를 터치하면 oled가 clear 되어 마치 텀블러가 off 된 것처럼 구현하였는데, 이렇게 구현하니 아두이노가 계속 켜져 있어서 배터리가 빨리 소모되는 문제가 있습니다. 터치 센서를 이용해서 ON/OFF 되도록 설계하면 더 좋을 것 같습니다.
+                                </p>
+                                <p><b>느낀 점</b><br>
+                                    온도센서로’10k 3950 ntc thermistor’를 사용했었는데, 해당 센서에 관한 정보가 너무 없어 제작 시 어려움이 있었습니다. 하지만 끈질기게 구글링한 결과 텀블러를 완성할 수 있었고, 해당 과정에서 거의 모든 답은 검색하면 찾을 수 있다는 것을 느꼈습니다. 또한 결과물 정리가 잘 안되어 거의 다 사라졌는데 앞으로는 결과물을 항상 정리하는 습관을 만들어야겠습니다.
+                                </p>
+                            </div>
+                            <div>
+                                <b>주 사용 기능 및 이유</b><img src="./images/arduino.png" ><br>
+                                해당 프로젝트를 제작 시에 아두이노를 사용했고, 이유는 다른 보드 보다 접근성이 쉽고 정보가 방대하며 틴커캐드같은 시뮬레이션 툴이 잘 되어있기 때문에 아두이노를 선택해서 제작하게 되었습니다.
+                            </div>
+                        </div>
+                    </a>
+                    <a id = "project6" name = "project" class="project_row">
+                        <p class="projectSeq">Project.6</p>
+                        <div class="project_img">
                             
                         </div>
-                        <div>
-                            
-                        </div>
-                        <div>
-                            
+                        <div class="project_contents">
+                            <div>
+                                <p><b>개요 </b><br>
+                                    
+                                    <span id="project6_Link" class="project_Links">GitHub Link</span>
+                                </p>
+                                <p><b>개선 요구 사항</b><br>
+                                    
+                                </p>
+                                <p><b>느낀 점</b><br>
+                                    
+                                </p>
+                            </div>
+                            <div>
+                                <b>주 사용 기능 및 이유</b><br>
+                            </div>
                         </div>
                     </a>
                 </div>

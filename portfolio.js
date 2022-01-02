@@ -117,3 +117,20 @@ contactLink.onclick = function(){
         contactLink.className='contactLink';
     }
 }
+// ==========================================================================================================================
+const project1_Link = document.getElementById('project1_Link');
+const project2_Link = document.getElementById('project2_Link');
+const project3_Link = document.getElementById('project3_Link');
+const project4_Link = document.getElementById('project4_Link');
+project1_Link.onclick=function(){
+    location.href="https://github.com/Hwang-97/ToyProject_Calculator";
+}
+project2_Link.onclick=function(){
+    location.href="https://github.com/Hwang-97/toyProject_team";
+}
+project3_Link.onclick=function(){
+    location.href="https://github.com/Hwang-97/Java_5team_Project";
+}
+project4_Link.onclick=function(){
+    location.href="https://github.com/Hwang-97/Oracle_team_project.";
+}
