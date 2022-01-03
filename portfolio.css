@@ -18,11 +18,11 @@ body{
     animation-duration: 2s;
 }   
 .text{
-    font-size: 40px;
+    font-size: 2.5em;
     font-weight: bolder;
 }
 .Chacgetext{
-    font-size: 35px;
+    font-size: 2.3em;
     font-weight: bolder;
     color:brown;
 }
@@ -74,6 +74,7 @@ body{
     transition: all 0.5s;
     left: 67%;
     top: 2%;
+    overflow: auto;
 }
 #contactCard p:nth-child(n+3){
     margin-left: 15%;
@@ -113,9 +114,10 @@ body{
 }
 #mainComment {
     padding-top: 1%;
-    padding-left: 50px;
+    padding-left: 3.3%;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 1.05em;
+
 }
 #manu{
     margin-left: 10%;
@@ -123,10 +125,10 @@ body{
 /* ============================================================================================================== */
 .button {
     text-align: center;
-    width: 80px;
-    margin-left: 16%;
+    width: 5.5%;
+    margin-left: 15.8%;
     margin-top: 10%;
-    font-size: 12px;
+    font-size: 0.75em;
     text-transform: uppercase;
     font-weight: 550;
     color: #000;
@@ -137,10 +139,10 @@ body{
 }
 .button_click {
     text-align: center;
-    width: 80px;
-    margin-left: 16%;
+    width: 5.5%;
+    margin-left: 15.8%;
     margin-top: 10%;
-    font-size: 12px;
+    font-size: 0.75em;
     text-transform: uppercase;
     font-weight: 550;
     color: #fff;
@@ -324,22 +326,21 @@ body{
     box-shadow: -0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 #certificate>div>img{
-    width: 50px;
-    height: 50px;
+    width: 35%;
+    height: 45%;
 }
 /* ============================================================================================================== */
 #skillMain{
-    margin-top: 15px;
-    margin-left: 46.6%;
+    margin-left: 45.5%;
     margin-right: auto;
-    padding-top: 20px;
+    padding-top: 4%;
     width: 15%;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 1.6em;
 }
 .skillData{
-    width: 100px;
-    height: 100px;
+    width: 12%;
+    height: 16%;
 }
 .skillData{
     display: inline-block;
@@ -373,7 +374,7 @@ body{
     outline:none;
 }
 .left:hover{
-    transform: translateY(-7px);
+    transform: translateY(-15%);
     color: #fff;
 }
 .right{
@@ -386,7 +387,7 @@ body{
     outline:none;
 }
 .right:hover{
-    transform: translateY(-7px);
+    transform: translateY(-15%);
     color: #fff;    
 }
 /* ==========================================================프로젝트 공통사항===================================================== */
@@ -398,7 +399,6 @@ body{
     background-color: rgba(255, 255, 255,0.95);
     border-radius: 2%;
     padding: 0px;
-    overflow: hidden;
 
     background: #ECE9E6;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */

@@ -27,6 +27,8 @@ const profilebtn = document.getElementById('profilebtn');
 const projectbtn = document.getElementById('projectbtn');
 const skillbtn = document.getElementById('skillbtn');
 
+const pageArr = document.getElementsByName('project');
+
 profilebtn.onclick = profileAni;
 projectbtn.onclick = projectAni;
 skillbtn.onclick = certificateAni;
@@ -41,6 +43,7 @@ function projectAni() {
     if (content3.className == 'contentOff' || content3.className=='contentStart'){
         projectbtn.className = 'button_click';
         content3.className = 'contentOn';
+        pageArr[0].style.opacity=1;
     }
 }
 function certificateAni() {
@@ -62,39 +65,51 @@ function contentCencle1(){
 function contentCencle2(){
     projectbtn.className = 'button';
     content3.className = 'contentOff';
+    resetProjectPage();
+    pageArr[0].style.opacity=0;
 }
 function contentCencle3(){
     skillbtn.className = 'button';
     content4.className = 'contentOff';
 }
 //====================================================================================================================pageOFF ▲
-const project1 = document.getElementById('project1');
-const project2 = document.getElementById('project2');
-const project3 = document.getElementById('project3');
-
 const left = document.getElementById("leftBtn");
 const right = document.getElementById('rightBtn');
-const maxPage = document.getElementsByName('project').length;
-
-let page=1;
+const maxPage = pageArr.length;
 const pagePreName = "#project";
+let page=0;
+
+const resetProjectPage = function (){
+    for(let i =1 ; i<maxPage ; i++){
+        pageArr[i].style.display="none";
+    }
+    page=0;
+    pageArr[0].style.display="";
+}
+resetProjectPage();
 
 left.onclick = function(){
-    if(page!=1){
-        page--;
-        left.href = pagePreName+page;
+    if(page!=0){
+        if(page!=maxPage){
+            pageArr[page].style.display="none";
+            page--;
+        }
+        pageArr[page].style.display="";
     }else{
+        page=0;
         alert("첫 페이지 입니다.");
     }
-}
+};
 right.onclick = function(){
-    if(page!=maxPage){
+    if(page<maxPage-1){
+        pageArr[page].style.display="none";
         page++;
-        right.href = pagePreName+page;
+        pageArr[page].style.display="";
     }else{
+        page=maxPage-1;
         alert("마지막 페이지 입니다.");
     }
-}
+};
 // ========================================================================================================================
 const gitHubLink = document.getElementById('gitHubLink');
 const blogeLink = document.getElementById('blogeLink');
