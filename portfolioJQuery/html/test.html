@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #c2e59c;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            font-family: GowunDodum;
+            margin: 0px;
+        }
+        .text_box{
+            /* margin-top: 15%;
+            margin-left: 30%; */
+            margin-top: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            /* width: 500px;
+            height: 160px; */
+            animation-duration: 2s;
+        }   
+        .text{
+            font-size: 2.5em;
+            font-weight: bolder;
+        }
+        .Chacgetext{
+            font-size: 2.3em;
+            font-weight: bolder;
+            color:brown;
+        }
+        .blink { 
+            animation: blink 0.6s infinite;
+            font-size: 2.3em;
+        }
+        @keyframes blink {
+            to {
+                opacity: 0;
+            }
+        }
+        .linkList{
+            text-align: center;
+        }
+        .linkList:nth-child(1){padding-top: 20%;}
+        .linkList:nth-child(2){padding-top: 20%;}
+        .col-xs-4{
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="contains">
+        <div class="row">
+            <div class="col-xs-4">
+                <p style="padding-top: 4.5%; padding-left: 15%; font-weight: bolder; font-size: 1.2em;">
+                    Developer. Hyun Woo :)
+                </p>
+            </div>
+            <div class="col-xs-4">
+                <div class="text_box">
+                    <span class="text">Hello! I`m Hyun woo</span><br>
+                    <span class="text">I like </span>
+                    <span class="Chacgetext" id = "textID">Development</span>
+                    <span class="blink">|</span>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="linkList">
+                    <div id="gitHubLink"><i class="fa-brands fa-github fa-2x"></i></div>
+                    <div id="blogeLink"><i class="fa-solid fa-blog fa-2x"></i></div>
+                    <div id="contactLinkId"class="contactLink"><i class="fa-solid fa-comments fa-2x"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                s  
+            </div>
+            <div class="col-xs-4">
+                s
+            </div>
+            <div class="col-xs-4">
+                s
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">  </script>
+    <script src="../js/bootstrap.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>
