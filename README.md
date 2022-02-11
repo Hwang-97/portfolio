@@ -1,3 +1,7 @@
+🙆‍♂️Portfolio🙆‍ 
+
+👉https://hwang-97.github.io/portfolio/portfolio.html👈
+
 ![projectTemp](https://user-images.githubusercontent.com/87955005/152466049-f9c573aa-ebed-4978-a027-0cc82364b1d6.png)
 
 >  진행한 **프로젝트**를 **한 줄**로 소개합니다. <br />
@@ -7,10 +11,8 @@
 
 # 📌 Table Of Contents
 * [📖 Introduction](#-introduction)
-* [🙋 My Role](#-my-role)
 * [🔎 Detail](#-detail)
 * [💡 Review](#-review)
-* [✔ To Do List](#-to-do-list)
 
 <br />
 <br />
@@ -45,39 +47,6 @@
 <br />
 <br />
 <br />
-
-
-
-# 🙋 My Role
-### 1. 담당 업무
-![projectTemp](https://user-images.githubusercontent.com/87955005/152466049-f9c573aa-ebed-4978-a027-0cc82364b1d6.png)
-
-#### 1-1. 주요 특징
-* 구현 **결과**에 대한 **설명**을 기입합니다.
-* 이미지 혹은 영상으로 **확인** 가능한 부분을 설명합니다.
-
-#### 1-2. 주요 특징
-* 구현 **결과**에 대한 **설명**을 기입합니다.
-* 이미지 혹은 영상으로 **확인** 가능한 부분을 설명합니다.
-
-<br />
-<br />
-
-### 2. 담당 업무
-![projectTemp](https://user-images.githubusercontent.com/87955005/152466049-f9c573aa-ebed-4978-a027-0cc82364b1d6.png)
-
-#### 2-1. 주요 특징
-* 구현 **결과**에 대한 **설명**을 기입합니다.
-* 이미지 혹은 영상으로 **확인** 가능한 부분을 설명합니다.
-
-#### 2-2. 주요 특징
-* 구현 **결과**에 대한 **설명**을 기입합니다.
-* 이미지 혹은 영상으로 **확인** 가능한 부분을 설명합니다.
-
-<br />
-<br />
-<br />
-
 
 
 # 🔎 Detail
@@ -130,22 +99,6 @@
 
 ### 2. 코드 리뷰
 * 보완점이 있는 코드를 **리뷰**합니다.
-
-<br />
-<br />
-<br />
-
-# ✔ To Do List
-- [ ] 미완료 기능
-  - [ ] 미완료 내용
-  - [ ] 미완료 내용
-  - [X] 완료 내용
-<br />
-
-- [X] 완료 기능
-  - [X] 완료 내용
-  - [X] 완료 내용
-  - [X] 완료 내용
 
 <br />
 <br />
