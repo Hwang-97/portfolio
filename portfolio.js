@@ -138,6 +138,11 @@ const project2_Link = document.getElementById('project2_Link');
 const project3_Link = document.getElementById('project3_Link');
 const project4_Link = document.getElementById('project4_Link');
 const project6_Link = document.getElementById('project6_Link');
+const project7_Link = document.getElementById('project7_Link');
+const project8_Link = document.getElementById('project8_Link');
+const project9_Link = document.getElementById('project9_Link');
+
+
 project1_Link.onclick=function(){
     window.open("about:blank").location.href="https://github.com/Hwang-97/ToyProject_Calculator";
 }
@@ -152,4 +157,13 @@ project4_Link.onclick=function(){
 }
 project6_Link.onclick=function(){
     window.open("about:blank").location.href="https://github.com/Hwang-97/Goguma";
+}
+project7_Link.onclick=function(){
+    window.open("about:blank").location.href="https://github.com/Hwang-97/ChatbotProject";
+}
+project8_Link.onclick=function(){
+    window.open("about:blank").location.href="https://github.com/Hwang-97/portfolio";
+}
+project9_Link.onclick=function(){
+    window.open("about:blank").location.href="https://github.com/Hwang-97/CopyTodayFile";
 }
