@@ -141,6 +141,7 @@ const project6_Link = document.getElementById('project6_Link');
 const project7_Link = document.getElementById('project7_Link');
 const project8_Link = document.getElementById('project8_Link');
 const project9_Link = document.getElementById('project9_Link');
+const project10_Link = document.getElementById('project10_Link');
 
 
 project1_Link.onclick=function(){
@@ -166,4 +167,7 @@ project8_Link.onclick=function(){
 }
 project9_Link.onclick=function(){
     window.open("about:blank").location.href="https://github.com/Hwang-97/CopyTodayFile";
+}
+project10_Link.onclick=function(){
+    window.open("about:blank").location.href="https://github.com/uplusm2/Ozone";
 }
