@@ -31,6 +31,7 @@
 * GitHub를 사용해서 형상관리 중입니다.
 <br />
 
+
 ### 3. 프로젝트 내용
 ![ezgif-7-ba6b53c840](https://user-images.githubusercontent.com/85034286/153598944-58b870c5-6f4b-4aeb-a52e-c6162f756024.gif)
 #### 3-1. 프로필
