@@ -1,3 +1,6 @@
+2025-11-30 경력 기술서 추가 작성
+https://hwang-97.github.io/portfolio/resume.html
+
 🙆‍♂️Portfolio🙆‍ 
 
 👉https://hwang-97.github.io/portfolio/portfolio.html
